@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Mike Wyatt - @ViewBag.Title</title>
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/themes/base/css")" rel="stylesheet" type="text/css" />
+    <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/js")"></script>
+	<link href='http://fonts.googleapis.com/css?family=Gochi+Hand|Walter+Turncoat|Francois+One|Coming+Soon' rel='stylesheet' type='text/css'>
+</head>
+<body>
+ 	<header>
+		<nav>
+			<ul>
+				<li id="blog"><a href="@Url.Action("Blog")">Blog</a></li>
+				<li id="about-me"><a href="@Url.Action("AboutMe")">About Me</a></li>
+				<!--<li id="you"><a href="you.html">You</a></li>-->
+				<li id="contact"><a href="@Url.Action("Contact")">Contact</a></li>
+				<li id="source"><a href="https://github.com/">GitHub<img src="@Url.Content("~/Content/Octocat.png")"/></a></li>
+			</ul>
+		</nav>
+		<h1>Mike Wyatt</h1>
+	</header>
+	
+	<div id="content">
+       @RenderBody()		
+	</div>
+
+	<footer></footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$.ready(function()
+		{
+		});
+	</script>
+</body>
+</html>

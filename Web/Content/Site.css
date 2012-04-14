@@ -1,0 +1,133 @@
+html
+{
+	background: #C65900 url('background-small.jpg') no-repeat top center;
+	font-family: 'Coming Soon', sans-serif;
+	/*font-family: 'Gochi Hand', cursive;
+	font-family: 'Walter Turncoat', cursive;
+	font-family: 'Francois One', sans-serif;
+	font-family: 'Coming Soon', cursive;*/
+}
+
+body
+{
+	margin: 0;
+}
+
+header
+{
+}
+
+header nav li
+{
+	list-style-type: none;
+	display: inline;
+	margin: 0em 0.8em;
+}
+
+header nav li a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	padding: 0.5em 1em;
+}
+
+/*header nav li#you a
+{
+	padding: 1em 1.5em;
+	font-size: 3em;
+}*/
+
+header nav li a:hover
+{
+	-moz-border-radius: 0em 0em 1em 1em;
+	-webkit-border-radius: 0em 0em 1em 1em;
+	border-radius: 0em 0em 1em 1em;
+	background-color: #A03A00;
+}
+
+header nav li a img
+{
+	height: 1em;
+}
+
+
+#content, header, footer
+{
+	margin: 0 auto;
+	width: 900px;
+}
+
+h1
+{
+	font-size: 4em;
+}
+
+
+
+
+
+
+/*
+body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+* Styles for basic forms
+-----------------------------------------------------------*
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+* Styles for validation helpers
+-----------------------------------------------------------*
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+*/
