@@ -17,40 +17,38 @@ header
 {
 }
 
-header nav li
-{
-	list-style-type: none;
-	display: inline;
-	margin: 0em 0.8em;
-}
+	header nav ul
+	{
+		margin-top: 0.6em;
+	}
+	
+	header nav li
+	{
+		list-style-type: none;
+		display: inline;
+		margin: 0em 0.8em;
+	}
 
-header nav li a
-{
-	text-decoration: none;
-	color: white;
-	font-size: 2em;
-	padding: 0.5em 1em;
-}
+	header nav li a
+	{
+		text-decoration: none;
+		color: white;
+		font-size: 2em;
+		padding: 0.4em 0.6em;
+	}
 
-/*header nav li#you a
-{
-	padding: 1em 1.5em;
-	font-size: 3em;
-}*/
+	header nav li a:hover
+	{
+		-moz-border-radius: 0em 0em 1em 1em;
+		-webkit-border-radius: 0em 0em 1em 1em;
+		border-radius: 0em 0em 1em 1em;
+		background-color: #A03A00;
+	}
 
-header nav li a:hover
-{
-	-moz-border-radius: 0em 0em 1em 1em;
-	-webkit-border-radius: 0em 0em 1em 1em;
-	border-radius: 0em 0em 1em 1em;
-	background-color: #A03A00;
-}
-
-header nav li a img
-{
-	height: 1em;
-}
-
+	header nav li a img
+	{
+		height: 1em;
+	}
 
 #content, header, footer
 {
@@ -63,8 +61,21 @@ h1
 	font-size: 4em;
 }
 
+article
+{
+	width:  450px;
+}
 
-
+	article#skills p span.skill-title
+	{
+		-moz-border-radius: 0.25em;
+		-webkit-border-radius: 0.25em;
+		border-radius: 0.25em;
+		padding: 0 0.4em;
+		margin-right: 0.5em;
+		background-color: #A03A00;
+		color:  white;
+	}
 
 
 

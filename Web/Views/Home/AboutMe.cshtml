@@ -1,4 +1,98 @@
 ﻿@{
-    ViewBag.Title = "About Me";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "About Me";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@model Web.Models.Home.AboutMe.AboutMeModel
+
+<article id="skills">
+	<p>
+		
+		@*foreach(var skill in Model.Skills.FluentLanguages)
+		{
+			bool isLink = !string.IsNullOrWhiteSpace(skill.Url);
+			if(isLink)
+			{
+				<a href="@skill.Url">@skill.Text</a>
+			}
+			else
+			{
+				<span>@skill.Text</span>
+			}
+		}*@
+
+	<span class="skill-title">Languages</span>I'm fluent in ,
+		<a href="http://msdn.microsoft.com/en-us/vstudio/hh388566">C#</a>, 
+		<a href="http://www.python.org/">Python</a>, 
+		JavaScript/jQuery, and SQL.  I've also done quite a bit of work with Java, C/C++, and Ruby in the past, although I'm currently a little rusty.
+	</p>
+
+	<p>
+		<span class="skill-title">Design and Practices</span>Complete SDLC, Relational Data Modeling, major design patterns, GRASP, SOLID, DRY, intersystem communication via WCF or REST, unit testing
+	</p>
+
+	<p>
+		<span class="skill-title">Tools and Frameworks</span>Visual Studio, SQL Server Management Studio, PyCharm, Eclipse, .NET Framework, ASP.NET MVC, OpenGL
+	</p>
+
+	<p>
+		<span class="skill-title">Other Technologies</span>Entity Framework, iBatis, HTML, CSS, AJAX, log4net, NUnit, SVN, and GIT
+	</p>
+
+</article>
+
+<article id="experience">
+	<strong>Quad/Systems, LLC</strong>
+	2010 - Present
+	Senior Technical Analyst
+	<ul>
+		<li>Lead major architectural enhancements to the QConnect web application, including:
+			<ul>
+				<li>Upgrade to ASP.NET MVC 3.</li>
+				<li>Plug-in system to allow customer-specific features and configuration, using run-time
+				assembly loading and dependency injection.</li>
+				<li>Conversion of iBatis.NET back-end to Entity Framework, to leverage dynamic SQL and Code First database deployment (in-progress).</li>
+				<li>Enhancemed back-end automation with ActiveMQ.NET messaging.</li>
+			</ul>
+		<li>Mentored new developers and provided expertise on general web development, ASP.NET MVC and other topics to teams across the company.</li>
+		<li>Developed best practices for coding and design, based on industry standards and concepts like GRASP and SOLID.</li>
+		<li>Rapidly developed and built small web applications using ASP.NET MVC 3 and Entity Framework:
+			<ul>
+				<li>QR.QG.com, which combines URL shortening with QR code generation.</li>
+				<li>ebaysellkit.com and ebaysellerinfo.com, two small marketing web sites.</li>
+			</ul>
+		</li>
+		<li>Designed and built two new web sites with ASP.NET MVC 1.0, both with powerful JavaScript front-ends:
+			<ul>
+				<li>AdShuttle 2.0, a large redesign of the original site. The focus was on allowing
+					ad uploads for use beyond print (iPad, iPhone, Android, and web).</li>
+				<li>Editorial Studio 1.0, a web application used to manage editorial content for magazines.</li>
+			</ul>
+		</li>
+	</ul>
+	     Quad/Systems, LLC 2008 – 2010 Software Engineer
+	Designed, built, and deployed two major web applications using Castle Monorail:
+	AdShuttle.com, used to upload ad files to major magazine publishers. QConnect.com,
+	where users can order small runs of highly customized print products. Developed
+	design and architecture skills by writing designs for junior developers. Quad/Graphics
+	2006 – 2008 Software Engineer Helped design and build Catalog Studio 1.0, a content
+	management web application for catalogers. Championed corporate transition from
+	ASP.NET WebForms to MVC-based Castle Monorail framework. Built an early prototype
+	of “AdShuttle” ad uploading web application using Java and IBM WebSphere. Built
+	“Check In/Check Out” image distribution system with C# 2.0. Quad/Graphics 2003 –
+	2006 Software Developer Converted PowerBuilder reports to ActiveReports.NET hosted
+	in a custom ASP.NET web site. Maintained “InSight” desktop tool used by Imaging
+	division to manage ads, images, and editorial content. Quad/Graphics 2003 Software
+	Development Trainee Assisted in the development of Workbench, Quad/Graphics’ proprietary
+	software management tool. 
+	
+	Optical Wavelength Labs 2002 – 2003 Programmer Built a
+	training simulator for a network testing device using C++, Win32 API, and DirectX.
+	Assisted with various computer hardware issues (computer assembly, repair)
+</article>
+
+<article id="education">
+</article>
+
+<article id="hobbies">
+</article>

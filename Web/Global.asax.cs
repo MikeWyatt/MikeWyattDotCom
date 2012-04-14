@@ -27,16 +27,22 @@ namespace Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
 
-            routes.MapRoute(
+            /*routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}",
                 defaults: new { controller = "Home", action = "AboutMe" }
+            );*/
+
+            routes.MapRoute(
+                name: "AnyAction",
+                url: "{action}",
+                defaults: new { controller = "Home" }
             );
 
-            routes.MapHttpRoute(
-                name: "Blog",
-                routeTemplate: "{action}",
-                defaults: new { controller = "MainController" }
+            routes.MapRoute(
+                name: "Default",
+                url: "",
+                defaults: new { controller = "Home", action = "AboutMe" }
             );
         }
 
